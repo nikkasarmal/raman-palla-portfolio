@@ -1,0 +1,10 @@
+const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.nav');
+toggle?.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});
+document.querySelectorAll('.nav-link').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');toggle?.setAttribute('aria-expanded','false');}));
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const sections=[...document.querySelectorAll('main section[id]')];const navLinks=[...document.querySelectorAll('.nav-link')];
+window.addEventListener('scroll',()=>{let current='home';sections.forEach(section=>{if(window.scrollY>=section.offsetTop-150)current=section.id;});navLinks.forEach(link=>{link.classList.toggle('active',link.getAttribute('href')==='#'+current);});},{passive:true});
+document.getElementById('year').textContent=new Date().getFullYear();
+const glow=document.querySelector('.cursor-glow');window.addEventListener('pointermove',e=>{if(glow && window.innerWidth>900){glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px';}},{passive:true});
+document.getElementById('contactForm')?.addEventListener('submit',e=>{e.preventDefault();const form=e.currentTarget;const data=new FormData(form);const subject=encodeURIComponent('Portfolio enquiry from '+data.get('name'));const body=encodeURIComponent('Name: '+data.get('name')+'\nEmail: '+data.get('email')+'\nService: '+data.get('service')+'\n\nProject details:\n'+data.get('message'));document.getElementById('formFeedback').textContent='Opening your email app…';window.location.href='mailto:ramanpalla704@gmail.com?subject='+subject+'&body='+body;});
