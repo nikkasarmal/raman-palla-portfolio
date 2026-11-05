@@ -1,0 +1,45 @@
+<!-- Replace the existing meta description and title in index.html with these, then add the remaining tags inside <head>. -->
+<meta name="description" content="Raman Palla is a web developer and digital solutions specialist in India, creating responsive websites, UI/UX designs and practical digital solutions. Explore selected web and business projects.">
+<meta name="theme-color" content="#090d18">
+<title>Raman Palla | Web Developer, UI/UX Designer & Digital Solutions Specialist</title>
+
+<link rel="canonical" href="https://nikkasarmal.github.io/raman-palla-portfolio/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Raman Palla Portfolio">
+<meta property="og:title" content="Raman Palla | Web Developer & Digital Solutions Specialist">
+<meta property="og:description" content="Explore Raman Palla's work in website development, UI/UX design, SEO and digital solutions.">
+<meta property="og:url" content="https://nikkasarmal.github.io/raman-palla-portfolio/">
+<meta property="og:image" content="https://nikkasarmal.github.io/raman-palla-portfolio/profile-photo.jpg">
+<meta property="og:image:alt" content="Raman Palla profile photo">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Raman Palla | Web Developer & Digital Solutions Specialist">
+<meta name="twitter:description" content="Web development, UI/UX design, SEO and practical digital solutions by Raman Palla.">
+<meta name="twitter:image" content="https://nikkasarmal.github.io/raman-palla-portfolio/profile-photo.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Raman Palla",
+  "url": "https://nikkasarmal.github.io/raman-palla-portfolio/",
+  "image": "https://nikkasarmal.github.io/raman-palla-portfolio/profile-photo.jpg",
+  "jobTitle": "Web Developer and Digital Solutions Specialist",
+  "sameAs": [
+    "https://github.com/nikkasarmal",
+    "https://in.linkedin.com/in/nikka-sarmal-120840184",
+    "https://www.instagram.com/dev_raman_palla/"
+  ],
+  "knowsAbout": [
+    "Web Development",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "UI/UX Design",
+    "Search Engine Optimization",
+    "Facebook Ads"
+  ]
+}
+</script>

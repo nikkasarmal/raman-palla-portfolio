@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nikkasarmal.github.io/raman-palla-portfolio/sitemap.xml
